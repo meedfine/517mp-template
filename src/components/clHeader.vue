@@ -2,7 +2,7 @@
 	<view>
 	    <!-- <view class="status_bar"></view> -->
 
-  <header class="mint-header" :class="[{ 'fixed-block': fixed, 'singleBtn':singleBtn }]">
+  <header class="mint-header" :class="[{ 'fixed-block': fixed,'singleBtn': singleBtn }]">
     <div class="mint-header-button is-left">
       <slot name="left">
         <span @click="back" class="" style="font-size:16px">back</span>
@@ -199,7 +199,7 @@ header .title-nav .active {
     -ms-flex: none;
     flex: none;
 }
-#app .singleBtn{
+.singleBtn{
     background-color: unset !important;
 }
 .newBackBtn {

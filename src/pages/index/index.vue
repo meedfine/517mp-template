@@ -2,10 +2,11 @@
 <template>
 	<div class="content">
 		
-		<clHeader :singleBtn="true" fixed :choseType.sync="tripTypeSel" :isActive="'1'"></clHeader>
+		<clHeader :choseType.sync="tripTypeSel" :isActive="'1'"></clHeader>
 		<navigator url="/pages/index/index2" hover-class="navigator-hover">
 			<button type="default">跳转到新页面</button>
 		</navigator>
+		<u-button @click="goJP">机票首页-伪</u-button>
 		<p>
 			<span>store当前值为：{{storeData.testData}}</span>
 		</p>
@@ -55,6 +56,9 @@ export default {
 		changeFirstDay(arg){
 			console.log(arg);
 			this.day= arg;
+		},
+		goJP(){
+			this.$u.route("/pages/index/search")
 		}
 	}
 }

@@ -1,7 +1,7 @@
 
 <template>
 	<div class="content">
-		<clHeader :singleBtn="true" fixed :choseType.sync="tripTypeSel" :isActive="'1'"></clHeader>
+		<clHeader :choseType.sync="tripTypeSel" :isActive="'1'"></clHeader>
 		<navigator url="/pages/index/index2" hover-class="navigator-hover">
 			<button type="default">跳转到新页面</button>
 		</navigator>

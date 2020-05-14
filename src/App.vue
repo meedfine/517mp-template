@@ -18,9 +18,4 @@
 		height: 100%;
 		overflow: hidden;
 	}
-	/* #ifdef H5 */
-	uni-page-head{
-		display:none !important;
-	}
-	/* #endif */
 </style>

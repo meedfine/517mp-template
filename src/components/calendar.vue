@@ -2,7 +2,7 @@
   <div>
     <div @click="popupVisible = true">
       <slot>
-        <u-button type="primary">日期</u-button>
+        <!-- <u-button type="primary">日期</u-button> -->
       </slot>
     </div>
     <div class="maskWrapper" :class="{ showMask: popupVisible}" @click="popupVisible=false"></div>
@@ -407,6 +407,7 @@ export default {
 .calendarWrapper
   &.showWrapper
     bottom 0
+    left 0
     display flex
   height 70%
   z-index 10000
